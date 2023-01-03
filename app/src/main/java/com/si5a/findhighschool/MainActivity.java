@@ -1,9 +1,11 @@
 package com.si5a.findhighschool;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,8 +17,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_about,menu);
-        return super.onCreateOptionsMenu(menu);
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.menu_card:
+                tampilDataCard();
+                break;
+            case R.id.menu_grid:
+                tampilDataGrid();
+                break;
+            case R.id.menu_about:
+                tampilDataAbout;
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
