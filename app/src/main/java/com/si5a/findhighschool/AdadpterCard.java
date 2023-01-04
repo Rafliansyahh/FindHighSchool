@@ -1,5 +1,6 @@
 package com.si5a.findhighschool;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -51,16 +52,16 @@ public class AdadpterCard extends RecyclerView.Adapter<AdadpterCard.CardViewHold
 
 
 
-//                Intent intent = new Intent(holder.itemView.getContext(), DetailActivity.class);
-//                intent.putExtra("varNama", nama);
-//                intent.putExtra("varTentang", tentang);
-//                intent.putExtra("varFoto", foto);
-//                intent.putExtra("varLat", lat);
-//                intent.putExtra("varLong", longs);
+               Intent intent = new Intent(holder.itemView.getContext(), DetailActivity.class);
+               intent.putExtra("xNama", nama);
+               intent.putExtra("xTentang", tentang);
+               intent.putExtra("xFoto", foto);
+               intent.putExtra("xLat", lat);
+               intent.putExtra("xLong", longs);
 
 
 
-//                holder.itemView.getContext().startActivity(intent);
+                holder.itemView.getContext().startActivity(intent);
 
 
 

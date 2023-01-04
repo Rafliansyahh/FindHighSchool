@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class DataSMA {
 
     public static String [][] data = new String[][]{
-            {"SMA Negeri 6 Palembang","sma negeri 6 adalah sma yang berada dibanlaaj","","2.963964",",104.766511"
+            {"SMA Negeri 6 Palembang","sma negeri 6 adalah sma yang berada dibanlaaj","https://upload.wikimedia.org/wikipedia/id/thumb/b/b1/Sma6New.png/225px-Sma6New.png","2.963964",",104.766511"
             }
     };
 
