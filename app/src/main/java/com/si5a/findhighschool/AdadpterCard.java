@@ -18,8 +18,8 @@ import java.util.ArrayList;
 public class AdadpterCard extends RecyclerView.Adapter<AdadpterCard.CardViewHolder> {
     private ArrayList<ModelSMA> dataSMA;
 
-    public AdadpterCard(ArrayList<ModelSMA> dataLokasi){
-        this.dataSMA = dataLokasi;
+    public AdadpterCard(ArrayList<ModelSMA> dataSMA){
+        this.dataSMA = dataSMA;
     }
 
 
