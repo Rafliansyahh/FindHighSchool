@@ -32,6 +32,7 @@ public class DetailActivity extends AppCompatActivity {
         yTentang = terima.getStringExtra("xTentang");
         yFoto    = terima.getStringExtra("xFoto");
 
+
         tvNama.setText(yNama);
         tvTentang.setText(yTentang);
         Glide

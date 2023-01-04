@@ -1,9 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9AA5DF"
+    android:background="#A5ADDA"
     tools:context=".AboutActivity">
-</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TENTANG KELOMPOK"
+            android:padding="6dp"
+            android:layout_gravity="center_horizontal"
+            style="@style/TextAppearance.AppCompat.Large"/>
+
+        <ImageView
+            android:id="@+id/iv_foto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/tv_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama SMA"
+            android:padding="6dp"
+            style="@style/TextAppearance.AppCompat.Large"/>
+
+        <TextView
+            android:id="@+id/tv_tentang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tentang SMA"
+            android:padding="6dp"
+            android:justificationMode="inter_word"
+            style="@style/TextAppearance.AppCompat.Medium"/>
+
+        <Button
+            android:id="@+id/btn_lokasi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="LIHAT LOKASI"/>
+    </LinearLayout>
+
+</ScrollView>

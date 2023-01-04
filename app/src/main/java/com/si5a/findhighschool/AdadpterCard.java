@@ -51,7 +51,6 @@ public class AdadpterCard extends RecyclerView.Adapter<AdadpterCard.CardViewHold
                 String longs = dataSMA.get(holder.getAdapterPosition()).getLongitude();
 
 
-
                Intent intent = new Intent(holder.itemView.getContext(), DetailActivity.class);
                intent.putExtra("xNama", nama);
                intent.putExtra("xTentang", tentang);
