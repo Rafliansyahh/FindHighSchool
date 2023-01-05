@@ -4,7 +4,7 @@ public class ModelSMA {
     private String nama;
     private String tentang;
     private String foto;
-    private String latitude, longitude;
+    private String kordinat;
 
     public String getNama() {return nama;}
 
@@ -28,19 +28,10 @@ public class ModelSMA {
         this.foto = foto;
     }
 
-    public String getLatitude() {
-        return latitude;
+    public String getKordinat() {
+        return kordinat;
     }
-
-    public void setLatitude(String latitude) {
-        this.latitude = latitude;
-    }
-
-    public String getLongitude() {
-        return longitude;
-    }
-
-    public void setLongitude(String longitude) {
-        this.longitude = longitude;
+    public void setKordinat(String kordinat) {
+        this.kordinat = kordinat;
     }
 }

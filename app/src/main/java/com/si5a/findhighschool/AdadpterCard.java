@@ -47,18 +47,15 @@ public class AdadpterCard extends RecyclerView.Adapter<AdadpterCard.CardViewHold
                 String nama = dataSMA.get(holder.getAdapterPosition()).getNama();
                 String tentang = dataSMA.get(holder.getAdapterPosition()).getTentang();
                 String foto = dataSMA.get(holder.getAdapterPosition()).getFoto();
-                String lat = dataSMA.get(holder.getAdapterPosition()).getLatitude();
-                String longs = dataSMA.get(holder.getAdapterPosition()).getLongitude();
+                String kordinat = dataSMA.get(holder.getAdapterPosition()).getKordinat();
+//                String longs = dataSMA.get(holder.getAdapterPosition()).getLongitude();
 
 
                Intent intent = new Intent(holder.itemView.getContext(), DetailActivity.class);
                intent.putExtra("xNama", nama);
                intent.putExtra("xTentang", tentang);
                intent.putExtra("xFoto", foto);
-               intent.putExtra("xLat", lat);
-               intent.putExtra("xLong", longs);
-
-
+               intent.putExtra("xkordinat", kordinat);
 
                 holder.itemView.getContext().startActivity(intent);
 
@@ -77,12 +74,9 @@ public class AdadpterCard extends RecyclerView.Adapter<AdadpterCard.CardViewHold
         return dataSMA.size();
     }
 
-
-
-
     public class CardViewHolder extends RecyclerView.ViewHolder{
         ImageView iv_foto;
-        TextView tv_nama, tv_tentang, tvlatitude, tvlongitude;
+        TextView tv_nama, tv_tentang;
 
 
 
