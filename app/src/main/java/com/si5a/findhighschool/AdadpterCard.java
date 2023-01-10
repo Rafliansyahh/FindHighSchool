@@ -48,8 +48,6 @@ public class AdadpterCard extends RecyclerView.Adapter<AdadpterCard.CardViewHold
                 String tentang = dataSMA.get(holder.getAdapterPosition()).getTentang();
                 String foto = dataSMA.get(holder.getAdapterPosition()).getFoto();
                 String kordinat = dataSMA.get(holder.getAdapterPosition()).getKordinat();
-//                String longs = dataSMA.get(holder.getAdapterPosition()).getLongitude();
-
 
                Intent intent = new Intent(holder.itemView.getContext(), DetailActivity.class);
                intent.putExtra("xNama", nama);
@@ -77,7 +75,6 @@ public class AdadpterCard extends RecyclerView.Adapter<AdadpterCard.CardViewHold
     public class CardViewHolder extends RecyclerView.ViewHolder{
         ImageView iv_foto;
         TextView tv_nama, tv_tentang;
-
 
 
         public CardViewHolder(@NonNull View itemView){

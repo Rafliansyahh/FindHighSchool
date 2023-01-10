@@ -8,46 +8,27 @@
     tools:context=".AboutActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="6dp"
         android:orientation="vertical">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TENTANG KELOMPOK"
-            android:padding="6dp"
-            android:layout_gravity="center_horizontal"
-            style="@style/TextAppearance.AppCompat.Large"/>
-
-        <ImageView
-            android:id="@+id/iv_foto"
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TEAM"
+                android:layout_marginLeft="160dp"
+                android:textSize="40dp"
+                >
+            </TextView>
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher"/>
+            android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/tv_nama"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Nama SMA"
-            android:padding="6dp"
-            style="@style/TextAppearance.AppCompat.Large"/>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_baseline_people_24"/>
 
-        <TextView
-            android:id="@+id/tv_tentang"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Tentang SMA"
-            android:padding="6dp"
-            android:justificationMode="inter_word"
-            style="@style/TextAppearance.AppCompat.Medium"/>
-
-        <Button
-            android:id="@+id/btn_lokasi"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="LIHAT LOKASI"/>
+        </RelativeLayout>
     </LinearLayout>
 
 </ScrollView>
