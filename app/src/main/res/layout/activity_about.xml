@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#08080808"
+    android:background="#F5EEE4"
     tools:context=".AboutActivity">
 
     <LinearLayout
@@ -25,7 +25,76 @@
         <RelativeLayout
             android:layout_width="400dp"
             android:layout_height="wrap_content"
-            android:background="#D3D3D3"
+            android:background="#E6DEC9"
+            android:layout_marginTop="20dp"
+            android:elevation="400dp">
+
+            <ImageView
+                android:id="@+id/iv_1"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="6dp"
+                android:src="@drawable/rafli"/>
+
+            <TextView
+                android:id="@+id/tv_rafli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama : Muhammad Rafliansyah"
+                android:layout_toRightOf="@id/iv_1"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NPM   : 2024240066"
+                android:layout_toRightOf="@id/iv_1"
+                android:layout_below="@id/tv_rafli"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:background="#E6DEC9"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/iv_1"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="6dp"
+                android:src="@drawable/iam"/>
+
+            <TextView
+                android:id="@+id/tv_rafli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama : Muhammad Rafliansyah"
+                android:layout_toRightOf="@id/iv_1"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NPM   : 2024240066"
+                android:layout_toRightOf="@id/iv_1"
+                android:layout_below="@id/tv_rafli"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:background="#E6DEC9"
             android:layout_marginTop="20dp">
 
             <ImageView
@@ -55,9 +124,8 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
                 android:textSize="20sp"/>
-
-
         </RelativeLayout>
+
     </LinearLayout>
 
 </ScrollView>
